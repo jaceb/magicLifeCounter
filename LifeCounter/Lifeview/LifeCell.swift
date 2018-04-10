@@ -9,13 +9,21 @@
 import UIKit
 
 
-
+protocol LifeCellDelegate {
+    func makePoisonAt(indexPath: IndexPath?)
+}
 
 class LifeCell: UITableViewCell {
 
     var lifeTotal: Int = 20
+    var delegate: LifeCellDelegate?
+    var indexPath: IndexPath?
+    var totalWins: [String] = []
     
     @IBOutlet weak var lifeLabel: UILabel!
+    @IBOutlet weak var winsLabel: UILabel!
+    
+    
     
     @IBAction func addOneLife(_ sender: Any) {
         addLifeToTotal(1)
@@ -25,6 +33,15 @@ class LifeCell: UITableViewCell {
     }
     
     @IBAction func addWin(_ sender: Any) {
+        
+        if totalWins.count < 1 {
+        totalWins.append("I")
+        winsLabel.text = totalWins.joined()
+        } else if totalWins.count == 1 {
+            totalWins.append("I")
+            winsLabel.text = totalWins.joined()
+            
+        }
         
     }
     
@@ -39,8 +56,27 @@ class LifeCell: UITableViewCell {
         lifeLabel.text = "\(lifeTotal)"
     }
     
+    @IBAction func insertPoisonButton(_ sender: Any) {
+        delegate?.makePoisonAt(indexPath: indexPath)
+        
+    }
     
+    func resetCell() {
+        lifeTotal = 20
+        lifeLabel.text = "\(lifeTotal)"
+
+    }
+    
+    func resetWins() {
+   
+        totalWins.removeAll()
+        winsLabel.text = totalWins.joined()
+
+    }
+        
 }
+    
+
 
 @IBDesignable public extension UIButton {
     
@@ -74,3 +110,5 @@ class LifeCell: UITableViewCell {
     }
 
 }
+
+

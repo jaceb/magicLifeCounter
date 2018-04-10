@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4EU-aY-aU3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H8a-h4-IMk">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +13,7 @@
         <!--Game Notes-->
         <scene sceneID="nON-HO-bzb">
             <objects>
-                <viewController storyboardIdentifier="NotesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="H8a-h4-IMk" customClass="NotesViewController" customModule="LifeCounter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NotesViewController" providesPresentationContextTransitionStyle="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="H8a-h4-IMk" customClass="NotesViewController" customModule="LifeCounter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="2nG-PM-Vjd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,14 +43,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxF-aO-Dr7">
-                                                    <rect key="frame" x="189" y="11" width="42" height="21"/>
+                                                    <rect key="frame" x="208" y="11" width="139" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXG-vr-yPU">
-                                                    <rect key="frame" x="53" y="11" width="42" height="21"/>
+                                                    <rect key="frame" x="21" y="11" width="146" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -63,7 +63,6 @@
                                         <connections>
                                             <outlet property="previewLabel" destination="bxF-aO-Dr7" id="67U-nS-7EY"/>
                                             <outlet property="titleLabel" destination="OXG-vr-yPU" id="UFo-mI-fGd"/>
-                                            <segue destination="t4k-pc-9nP" kind="presentation" identifier="didSelectRow" id="Vkj-zL-QG7"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -87,8 +86,7 @@
                     <navigationItem key="navigationItem" title="Game Notes" leftItemsSupplementBackButton="YES" id="9mz-JR-7Y8">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="vmH-Cu-Yuw">
                             <connections>
-                                <action selector="addNoteClick:" destination="H8a-h4-IMk" id="aek-a6-wrq"/>
-                                <segue destination="t4k-pc-9nP" kind="show" identifier="addNoteClick" id="piG-xf-zax"/>
+                                <action selector="addNoteClick:" destination="H8a-h4-IMk" id="0s3-XI-Jkw"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -97,6 +95,8 @@
                     <connections>
                         <outlet property="notesTextView" destination="B4b-SR-RwK" id="5u3-Z7-JB3"/>
                         <outlet property="tableView" destination="42C-C2-ND0" id="ESX-Wa-1CV"/>
+                        <segue destination="t4k-pc-9nP" kind="show" identifier="editNote" id="87D-Ff-PwK"/>
+                        <segue destination="t4k-pc-9nP" kind="show" identifier="addNoteClick" id="fNW-ur-bT2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CVr-aL-0tv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -106,9 +106,9 @@
         <!--Title-->
         <scene sceneID="5cR-E6-DgY">
             <objects>
-                <viewController id="t4k-pc-9nP" customClass="NotesEditorViewController" customModule="LifeCounter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NotesEditorViewController" automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="t4k-pc-9nP" customClass="NotesEditorViewController" customModule="LifeCounter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ne7-PR-wXl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" fixedFrame="YES" keyboardDismissMode="interactive" text="text here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="B4b-SR-RwK">
@@ -123,8 +123,9 @@
                         <color key="backgroundColor" red="0.40000000000000002" green="1" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="HrA-Ku-Xcu"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Game Notes" id="7bI-t8-azh"/>
-                    <navigationItem key="navigationItem" title="Title" id="R1a-AG-oB3">
+                    <navigationItem key="navigationItem" title="Title" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="R1a-AG-oB3">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="S4a-KZ-HEc">
                             <connections>
                                 <action selector="doneNoteButtonClick:" destination="t4k-pc-9nP" id="DfQ-6c-Fuj"/>
@@ -132,7 +133,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
                         <outlet property="notesTextView" destination="B4b-SR-RwK" id="LDS-Nb-cmT"/>
                     </connections>
@@ -144,7 +145,7 @@
         <!--Game Notes-->
         <scene sceneID="6xe-aO-7X2">
             <objects>
-                <navigationController storyboardIdentifier="NotesNav" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4EU-aY-aU3" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NotesNav" automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4EU-aY-aU3" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Game Notes" id="CfQ-6k-2De"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
@@ -168,6 +169,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Vkj-zL-QG7"/>
+        <segue reference="fNW-ur-bT2"/>
     </inferredMetricsTieBreakers>
 </document>

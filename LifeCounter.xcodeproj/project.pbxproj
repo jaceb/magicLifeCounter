@@ -13,15 +13,11 @@
 		036CCB282053B89F0049CDC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 036CCB262053B89F0049CDC3 /* LaunchScreen.storyboard */; };
 		0370C290205466D400210B0C /* LifeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370C28F205466D400210B0C /* LifeViewController.swift */; };
 		0370C2992054712300210B0C /* LifeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370C2982054712300210B0C /* LifeCell.swift */; };
-		0370C29B2054857C00210B0C /* winsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370C29A2054857C00210B0C /* winsCell.swift */; };
-		0370C29D205485A500210B0C /* poisonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370C29C205485A500210B0C /* poisonCell.swift */; };
+		0370C29D205485A500210B0C /* PoisonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370C29C205485A500210B0C /* PoisonCell.swift */; };
 		0370C29F205498BF00210B0C /* MyTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370C29E205498BF00210B0C /* MyTableHeader.swift */; };
 		03A1C45A20603FFA00E6D2DA /* NotesEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A1C45920603FFA00E6D2DA /* NotesEditorViewController.swift */; };
-		03A1C45D2060CCE300E6D2DA /* poisonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A1C45C2060CCE300E6D2DA /* poisonView.xib */; };
 		03AADE6F205F78E100D883EA /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AADE6E205F78E100D883EA /* NotesViewController.swift */; };
 		03AADE71205F79C400D883EA /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AADE70205F79C400D883EA /* NoteCell.swift */; };
-		03B3AF4F205763FF004360AE /* resetPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B3AF4E205763FF004360AE /* resetPopupViewController.swift */; };
-		03B3AF51205766FE004360AE /* ResetPopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03B3AF50205766FE004360AE /* ResetPopup.storyboard */; };
 		03CE8C0320619EF400CD9A75 /* Storm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03CE8C0220619EF400CD9A75 /* Storm.storyboard */; };
 		03ECDF8E205F76B3005F6C45 /* Note.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03ECDF8D205F76B3005F6C45 /* Note.storyboard */; };
 		03FD1A612065FECB00039259 /* StormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FD1A602065FECB00039259 /* StormViewController.swift */; };
@@ -36,15 +32,11 @@
 		036CCB292053B89F0049CDC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0370C28F205466D400210B0C /* LifeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeViewController.swift; sourceTree = "<group>"; };
 		0370C2982054712300210B0C /* LifeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCell.swift; sourceTree = "<group>"; };
-		0370C29A2054857C00210B0C /* winsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = winsCell.swift; sourceTree = "<group>"; };
-		0370C29C205485A500210B0C /* poisonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = poisonCell.swift; sourceTree = "<group>"; };
+		0370C29C205485A500210B0C /* PoisonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoisonCell.swift; sourceTree = "<group>"; };
 		0370C29E205498BF00210B0C /* MyTableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableHeader.swift; sourceTree = "<group>"; };
 		03A1C45920603FFA00E6D2DA /* NotesEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesEditorViewController.swift; sourceTree = "<group>"; };
-		03A1C45C2060CCE300E6D2DA /* poisonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = poisonView.xib; sourceTree = "<group>"; };
 		03AADE6E205F78E100D883EA /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		03AADE70205F79C400D883EA /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
-		03B3AF4E205763FF004360AE /* resetPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resetPopupViewController.swift; sourceTree = "<group>"; };
-		03B3AF50205766FE004360AE /* ResetPopup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ResetPopup.storyboard; sourceTree = "<group>"; };
 		03CE8C0220619EF400CD9A75 /* Storm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storm.storyboard; sourceTree = "<group>"; };
 		03ECDF8D205F76B3005F6C45 /* Note.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Note.storyboard; sourceTree = "<group>"; };
 		03FD1A602065FECB00039259 /* StormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormViewController.swift; sourceTree = "<group>"; };
@@ -99,7 +91,6 @@
 				036CCB212053B89F0049CDC3 /* Main.storyboard */,
 				0370C28F205466D400210B0C /* LifeViewController.swift */,
 				0370C2982054712300210B0C /* LifeCell.swift */,
-				0370C29A2054857C00210B0C /* winsCell.swift */,
 				0370C29E205498BF00210B0C /* MyTableHeader.swift */,
 			);
 			path = Lifeview;
@@ -119,8 +110,7 @@
 		03A1C45B2060CBD900E6D2DA /* Poison */ = {
 			isa = PBXGroup;
 			children = (
-				0370C29C205485A500210B0C /* poisonCell.swift */,
-				03A1C45C2060CCE300E6D2DA /* poisonView.xib */,
+				0370C29C205485A500210B0C /* PoisonCell.swift */,
 			);
 			path = Poison;
 			sourceTree = "<group>";
@@ -137,8 +127,6 @@
 		03B3AF4D205763DA004360AE /* resetPopup */ = {
 			isa = PBXGroup;
 			children = (
-				03B3AF50205766FE004360AE /* ResetPopup.storyboard */,
-				03B3AF4E205763FF004360AE /* resetPopupViewController.swift */,
 			);
 			path = resetPopup;
 			sourceTree = "<group>";
@@ -170,7 +158,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Jace Briggs";
 				TargetAttributes = {
 					036CCB192053B89F0049CDC3 = {
@@ -202,13 +190,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03B3AF51205766FE004360AE /* ResetPopup.storyboard in Resources */,
 				03ECDF8E205F76B3005F6C45 /* Note.storyboard in Resources */,
 				036CCB282053B89F0049CDC3 /* LaunchScreen.storyboard in Resources */,
 				03CE8C0320619EF400CD9A75 /* Storm.storyboard in Resources */,
 				036CCB252053B89F0049CDC3 /* Assets.xcassets in Resources */,
 				036CCB232053B89F0049CDC3 /* Main.storyboard in Resources */,
-				03A1C45D2060CCE300E6D2DA /* poisonView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,14 +208,12 @@
 				03FD1A612065FECB00039259 /* StormViewController.swift in Sources */,
 				0370C290205466D400210B0C /* LifeViewController.swift in Sources */,
 				0370C2992054712300210B0C /* LifeCell.swift in Sources */,
-				0370C29B2054857C00210B0C /* winsCell.swift in Sources */,
 				03A1C45A20603FFA00E6D2DA /* NotesEditorViewController.swift in Sources */,
 				0370C29F205498BF00210B0C /* MyTableHeader.swift in Sources */,
 				03AADE6F205F78E100D883EA /* NotesViewController.swift in Sources */,
-				0370C29D205485A500210B0C /* poisonCell.swift in Sources */,
+				0370C29D205485A500210B0C /* PoisonCell.swift in Sources */,
 				03AADE71205F79C400D883EA /* NoteCell.swift in Sources */,
 				036CCB1E2053B89F0049CDC3 /* AppDelegate.swift in Sources */,
-				03B3AF4F205763FF004360AE /* resetPopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +253,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -276,6 +261,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -326,6 +312,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -333,6 +320,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

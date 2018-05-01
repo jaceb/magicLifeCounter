@@ -88,7 +88,7 @@ extension LifeViewController: UITableViewDelegate, UITableViewDataSource{
                 cell.resetWins()
                 tableView.reloadRows(at: [indexPath], with: .none)
 
-                print("reset wins")
+                
                 
         }
             resetGame.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
@@ -106,7 +106,6 @@ extension LifeViewController: UITableViewDelegate, UITableViewDataSource{
                 
                 tableView.reloadRows(at: [indexPath], with: .none)
 
-                print("reset poison")
                 
             }
             let config = UISwipeActionsConfiguration(actions: [resetPoison])

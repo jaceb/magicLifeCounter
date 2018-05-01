@@ -80,18 +80,11 @@ class LifeCell: UITableViewCell {
 
 @IBDesignable public extension UIButton {
     
-    @IBInspectable var borderWidth: CGFloat {
-        set {
-            layer.borderWidth = newValue
-        }
-        get {
-            return layer.borderWidth
-        }
-    }
+   
     
-    @IBInspectable var cornerRadius: CGFloat {
+    var cornerRadius: CGFloat {
         set {
-            layer.cornerRadius = newValue
+            layer.cornerRadius = 8
         }
         get {
             return layer.cornerRadius

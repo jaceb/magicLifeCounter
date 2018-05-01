@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0362DE31208EDB4E0074C0D0 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0362DE30208EDB4E0074C0D0 /* Card.swift */; };
+		0362DE33208EE2000074C0D0 /* CardSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0362DE32208EE2000074C0D0 /* CardSearchTableViewCell.swift */; };
 		036CCB1E2053B89F0049CDC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CCB1D2053B89F0049CDC3 /* AppDelegate.swift */; };
 		036CCB232053B89F0049CDC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 036CCB212053B89F0049CDC3 /* Main.storyboard */; };
 		036CCB252053B89F0049CDC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 036CCB242053B89F0049CDC3 /* Assets.xcassets */; };
@@ -19,11 +21,17 @@
 		03AADE6F205F78E100D883EA /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AADE6E205F78E100D883EA /* NotesViewController.swift */; };
 		03AADE71205F79C400D883EA /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AADE70205F79C400D883EA /* NoteCell.swift */; };
 		03CE8C0320619EF400CD9A75 /* Storm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03CE8C0220619EF400CD9A75 /* Storm.storyboard */; };
+		03DAD68C20859A72005DB7A3 /* TradesMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DAD68B20859A72005DB7A3 /* TradesMain.storyboard */; };
+		03DAD68F2086EF85005DB7A3 /* Gatherer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DAD68E2086EF85005DB7A3 /* Gatherer.storyboard */; };
+		03DAD6912086EFA1005DB7A3 /* CardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DAD6902086EFA1005DB7A3 /* CardListViewController.swift */; };
+		03DAD6932086EFBB005DB7A3 /* TradesMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DAD6922086EFBB005DB7A3 /* TradesMainViewController.swift */; };
 		03ECDF8E205F76B3005F6C45 /* Note.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03ECDF8D205F76B3005F6C45 /* Note.storyboard */; };
 		03FD1A612065FECB00039259 /* StormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FD1A602065FECB00039259 /* StormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0362DE30208EDB4E0074C0D0 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		0362DE32208EE2000074C0D0 /* CardSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSearchTableViewCell.swift; sourceTree = "<group>"; };
 		036CCB1A2053B89F0049CDC3 /* LifeCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		036CCB1D2053B89F0049CDC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		036CCB222053B89F0049CDC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,6 +46,10 @@
 		03AADE6E205F78E100D883EA /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		03AADE70205F79C400D883EA /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		03CE8C0220619EF400CD9A75 /* Storm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storm.storyboard; sourceTree = "<group>"; };
+		03DAD68B20859A72005DB7A3 /* TradesMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TradesMain.storyboard; sourceTree = "<group>"; };
+		03DAD68E2086EF85005DB7A3 /* Gatherer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gatherer.storyboard; sourceTree = "<group>"; };
+		03DAD6902086EFA1005DB7A3 /* CardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewController.swift; sourceTree = "<group>"; };
+		03DAD6922086EFBB005DB7A3 /* TradesMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradesMainViewController.swift; sourceTree = "<group>"; };
 		03ECDF8D205F76B3005F6C45 /* Note.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Note.storyboard; sourceTree = "<group>"; };
 		03FD1A602065FECB00039259 /* StormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,7 +84,7 @@
 		036CCB1C2053B89F0049CDC3 /* LifeCounter */ = {
 			isa = PBXGroup;
 			children = (
-				03B3AF4D205763DA004360AE /* resetPopup */,
+				03DAD68A20859A47005DB7A3 /* Trades */,
 				0370C2922054670600210B0C /* NoteView */,
 				0370C291205466DA00210B0C /* Lifeview */,
 				036CCB1D2053B89F0049CDC3 /* AppDelegate.swift */,
@@ -124,11 +136,25 @@
 			path = Storm;
 			sourceTree = "<group>";
 		};
-		03B3AF4D205763DA004360AE /* resetPopup */ = {
+		03DAD68A20859A47005DB7A3 /* Trades */ = {
 			isa = PBXGroup;
 			children = (
+				03DAD68B20859A72005DB7A3 /* TradesMain.storyboard */,
+				03DAD6922086EFBB005DB7A3 /* TradesMainViewController.swift */,
+				03DAD68D2086EF4D005DB7A3 /* Gatherer */,
 			);
-			path = resetPopup;
+			path = Trades;
+			sourceTree = "<group>";
+		};
+		03DAD68D2086EF4D005DB7A3 /* Gatherer */ = {
+			isa = PBXGroup;
+			children = (
+				03DAD68E2086EF85005DB7A3 /* Gatherer.storyboard */,
+				03DAD6902086EFA1005DB7A3 /* CardListViewController.swift */,
+				0362DE30208EDB4E0074C0D0 /* Card.swift */,
+				0362DE32208EE2000074C0D0 /* CardSearchTableViewCell.swift */,
+			);
+			path = Gatherer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,10 +216,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03DAD68F2086EF85005DB7A3 /* Gatherer.storyboard in Resources */,
 				03ECDF8E205F76B3005F6C45 /* Note.storyboard in Resources */,
 				036CCB282053B89F0049CDC3 /* LaunchScreen.storyboard in Resources */,
 				03CE8C0320619EF400CD9A75 /* Storm.storyboard in Resources */,
 				036CCB252053B89F0049CDC3 /* Assets.xcassets in Resources */,
+				03DAD68C20859A72005DB7A3 /* TradesMain.storyboard in Resources */,
 				036CCB232053B89F0049CDC3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,10 +234,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				03FD1A612065FECB00039259 /* StormViewController.swift in Sources */,
+				03DAD6912086EFA1005DB7A3 /* CardListViewController.swift in Sources */,
 				0370C290205466D400210B0C /* LifeViewController.swift in Sources */,
+				03DAD6932086EFBB005DB7A3 /* TradesMainViewController.swift in Sources */,
 				0370C2992054712300210B0C /* LifeCell.swift in Sources */,
 				03A1C45A20603FFA00E6D2DA /* NotesEditorViewController.swift in Sources */,
+				0362DE33208EE2000074C0D0 /* CardSearchTableViewCell.swift in Sources */,
 				0370C29F205498BF00210B0C /* MyTableHeader.swift in Sources */,
+				0362DE31208EDB4E0074C0D0 /* Card.swift in Sources */,
 				03AADE6F205F78E100D883EA /* NotesViewController.swift in Sources */,
 				0370C29D205485A500210B0C /* PoisonCell.swift in Sources */,
 				03AADE71205F79C400D883EA /* NoteCell.swift in Sources */,

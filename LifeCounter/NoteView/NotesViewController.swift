@@ -99,7 +99,7 @@ extension NotesViewController: UITableViewDelegate, UITableViewDataSource {
         return UIView()
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 64
+        return 164
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0

@@ -18,7 +18,24 @@ class StormViewController: UIViewController {
     var blueManaTotal:Int = 0
     
     @IBOutlet weak var stormLabel: UILabel!
+    @IBAction func resetStormClick(_ sender: Any) {
+        stormTotal = 0
+        stormLabel.text = "\(stormTotal)"
+    }
     
+    @IBAction func resetManaClick(_ sender: Any) {
+        whiteManaTotal = 0
+        whiteManaLabel.text = "\(whiteManaTotal)"
+        blackManaTotal = 0
+        blackManaLabel.text = "\(blackManaTotal)"
+        greenManaTotal = 0
+        greenManaLabel.text = "\(greenManaTotal)"
+        redManaTotal = 0
+        redManaLabel.text = "\(redManaTotal)"
+        blueManaTotal = 0
+        blueManaLabel.text = "\(blueManaTotal)"
+        
+    }
     @IBAction func stormPlusClicked(_ sender: Any) {
         stormTotal += 1
         stormLabel.text = "\(stormTotal)"
@@ -64,6 +81,8 @@ class StormViewController: UIViewController {
         blackManaLabel.text = "\(blackManaTotal)"
     }
     @IBOutlet weak var greenManaLabel: UILabel!
+    
+    
     
     @IBAction func greenManaPlus(_ sender: Any) {
         greenManaTotal += 1
@@ -135,3 +154,8 @@ class StormViewController: UIViewController {
     */
 
 }
+
+
+       
+
+
